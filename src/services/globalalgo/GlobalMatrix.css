@@ -1,0 +1,65 @@
+.matrix {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    flex-direction: column;
+    position: relative;
+}
+.arrow-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #fff;
+    cursor: pointer;
+}
+
+.arrow-back > span {
+    position: absolute;
+    background-color: #fff;
+    width: 20px;
+    height: 3px;
+    top: -1px;
+    right: -30px;
+}
+
+.matrix > h3 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Titan One', cursive;
+    color: #e5dee6;
+    font-weight: 50;
+}
+
+.matrixbg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    flex-direction: column;
+}
+
+.trace {
+    border: 1px solid crimson;
+    place-items: center;
+    display: grid;
+    font-size: 0.8em;
+}
+
+.display__result {
+    margin-top: 70px;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    padding: 10px;
+    width: fit-content;
+}
+
+.display__result > pre {
+    font-size: 17px;
+}

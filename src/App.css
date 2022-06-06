@@ -1,0 +1,32 @@
+.app {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mainscreen {
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+    padding: 10px;
+    flex: 1;
+}
+.mainscreen {
+    flex: 0.85;
+}
+
+.btn {
+    width: 250px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    background-color: crimson;
+    color: #fff;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+}
