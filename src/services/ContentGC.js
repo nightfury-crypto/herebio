@@ -4,7 +4,6 @@ import './ContentGC.css'
 function ContentGC() {
 
     const [seqInput, setSequenceInput] = useState('')
-    const [compSeq, setCompSeq] = useState('')
     const [gcCal, setgcCal] = useState(0)
     const [atCal, setatCal] = useState(0)
 
@@ -53,7 +52,7 @@ function ContentGC() {
                 </form>
             </div>
 
-            {(gcCal || atCal) && (<div className="comp__bottomResult">
+            {(gcCal || atCal) ? <div className="comp__bottomResult">
                 <hr />
                 <div>
                     <div className='same'>
@@ -62,7 +61,7 @@ function ContentGC() {
                         <span>AT content - <span> {atCal}%</span></span>
                     </div>
                 </div>
-            </div>)}
+            </div> : <div className="comp__bottomResult"><hr /></div>}
         </div>
     )
 }
