@@ -55,10 +55,10 @@ function ContentGC() {
             {(gcCal || atCal) ? <div className="comp__bottomResult">
                 <hr />
                 <div>
-                    <div className='same'>
+                    <div className='same gcsame'>
                         <p>OUTPUT </p>
-                        <span>GC content - <span> {gcCal}%</span></span>
-                        <span>AT content - <span> {atCal}%</span></span>
+                        <span>GC content - <span> {String(gcCal).substring(0,5)}%</span></span>
+                        <span>AT content - <span> {String(atCal).substring(0,5)}%</span></span>
                     </div>
                 </div>
             </div> : <div className="comp__bottomResult"><hr /></div>}

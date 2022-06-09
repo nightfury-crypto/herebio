@@ -7,6 +7,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    overflow: auto;
 }
 
 .contentgc__top {
@@ -38,10 +39,26 @@
 .same > p {
     font-weight: 900;
     font-family: 'Arial Narrow Bold', sans-serif;
-    font-size: 25px;
+    font-size: 1.8em;
     color: #9c3cb2;
 }
 
 .same > span {
     margin-left: 20px;
+}
+
+
+@media screen and (max-width:565px) {
+    .contentgc__top > h3 {
+        font-size: 1.5em !important;
+    }
+
+    .gcsame {
+        margin-left: 0px !important;
+        font-size: 0.9em;
+    }
+
+    .gcsame > span {
+        margin-left: 2px !important;
+    }
 }
