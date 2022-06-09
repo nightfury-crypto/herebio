@@ -7,22 +7,27 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    overflow: auto;
 }
-.complementary > div {
+
+.complementary>div {
     width: 100%;
 }
+
 .comp__top {
     display: grid;
     place-items: center;
     height: 60px;
     margin-bottom: 30px;
 }
-.comp__top > h3 {
-    font-size: 40px;
+
+.comp__top>h3 {
+    font-size: 2em;
     font-family: 'Titan One', cursive;
     color: #fff;
     font-weight: 50;
 }
+
 .complementary__form {
     display: flex;
     justify-content: flex-start;
@@ -30,17 +35,22 @@
     flex-direction: column;
     margin-left: 30px;
 }
-.complementary__form > label:first-child {
+
+.complementary__form>label:first-child {
     margin-bottom: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
 }
+
 .txtArea {
     background-color: transparent;
     padding: 10px;
     color: #fff;
     margin-bottom: 20px;
     resize: none;
+    width: 100%;
+    max-width: 500px;
+    height: 130px;
 }
 
 .seqoption {
@@ -48,15 +58,17 @@
     justify-content: flex-start;
     align-items: center;
 }
-.seqoption > label {
+
+.seqoption>label {
     margin-left: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.seqoption > label > span {
+
+.seqoption>label>span {
     margin-left: 4px;
-} 
+}
 
 .comp__btn {
     width: 140px;
@@ -82,10 +94,10 @@
 }
 
 .comp__bottomResult {
-    margin-top: 50px;  
+    margin-top: 50px;
 }
 
-.comp__bottomResult > div.same {
+.comp__bottomResult>div.same {
     margin-top: 20px;
     margin-left: 50px;
     display: flex;
@@ -94,13 +106,15 @@
     flex-direction: column;
 }
 
-.comp__bottomResult > div > div {
+.comp__bottomResult>div>div {
     width: 80%;
     height: 150px;
 }
-.comp__bottomResult > div > div > p {
+
+.comp__bottomResult>div>div>p {
     margin-top: 10px;
 }
+
 .resultDisplay {
     background-color: #9c3cb2;
     padding: 0 10px;
@@ -108,6 +122,8 @@
     padding-bottom: 5px;
     height: 100%;
     max-height: 100px;
+    width: 100%;
+    max-width: 500px;
     resize: none;
     margin-top: 8px;
     overflow: auto;
@@ -116,4 +132,42 @@
     font-size: 15px;
     font-weight: 300;
     user-select: none;
+}
+
+@media screen and (max-width:565px) {
+
+    .complementary__form {
+        margin-left: 0px !important;
+    }
+
+    .seqoption {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .seqoption>label:first-child {
+        /* text-decoration: underline; */
+        color: coral;
+    }
+
+    .comp__top>h3 {
+        font-size: 1.4em;
+    }
+
+    .complementary__form>label:first-child {
+        font-size: 0.8em;
+    }
+
+    .comp__bottomResult>div.same {
+        margin-left: 0px !important;
+    }
+
+    .comp__bottomResult>div>div {
+        width: 100%;
+    }
+
+    .same {
+        margin-left: 0px !important;
+    }
 }

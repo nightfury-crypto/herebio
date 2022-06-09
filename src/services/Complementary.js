@@ -71,7 +71,6 @@ function Complementary() {
                 <form action="" className='complementary__form'>
                     <label htmlFor="seqinput">Enter Sequence - </label>
                     <textarea name="" id='seqinput' className='txtArea'
-                        cols="60" rows="10"
                         placeholder='Enter DNA/RNA sequence'
                         value={seqInput.toUpperCase()}
                         onChange={(e) => setSequenceInput(e.target.value)}
@@ -114,7 +113,7 @@ function Complementary() {
                 <div>
                     <div className='same'>
                         <p>COMPLEMENTARY - </p>
-                        <textarea name="showResult" id="" className="resultDisplay" cols="70" value={compSeq} readOnly />
+                        <textarea name="showResult" id="" className="resultDisplay" value={compSeq} readOnly />
                     </div>
                 </div>
             </div>)}
