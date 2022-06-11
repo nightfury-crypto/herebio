@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <SideBar />
-      <div className='mainscreen' >
+      <div className='mainscreen'>
         <Routes >
           <Route path="/complementary" element={<Complementary />}>
           </Route>
