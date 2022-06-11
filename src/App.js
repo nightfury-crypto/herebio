@@ -7,10 +7,12 @@ import ContentGC from './services/ContentGC';
 import SmithWaterAlgo from './services/SmithWaterAlgo';
 
 function App() {
+  const getheight = window.innerHeight
+
   return (
     <div className="app">
       <SideBar />
-      <div className='mainscreen'>
+      <div className='mainscreen' style={{height: getheight}}>
         <Routes >
           <Route path="/complementary" element={<Complementary />}>
           </Route>
