@@ -5,22 +5,17 @@
 }
 
 html {
-  height: 100%;
-  height: -moz-available;
+  /* height: -moz-available; */
   /* WebKit-based browsers will ignore this. */
   height: -webkit-fill-available;
-  /* Mozilla-based browsers will ignore this. */
-  height: stretch;
 }
 
 body {
   width: 100vw;
-  height: 100%;
-  height: -moz-available;
+  height: 100vh;
+  /* height: -moz-available; */
   /* WebKit-based browsers will ignore this. */
   height: -webkit-fill-available;
-  /* Mozilla-based browsers will ignore this. */
-  height: stretch;
   background-color: rgb(11, 8, 21);
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
