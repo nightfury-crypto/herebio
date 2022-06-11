@@ -7,10 +7,8 @@ import ContentGC from './services/ContentGC';
 import SmithWaterAlgo from './services/SmithWaterAlgo';
 
 function App() {
-  const getheight = window.innerHeight
-
   return (
-    <div className="app" style={{height: getheight}}>
+    <div className="app">
       <SideBar />
       <div className='mainscreen' >
         <Routes >

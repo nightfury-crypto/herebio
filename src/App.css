@@ -2,17 +2,15 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    position: relative;
 }
 
 .mainscreen {
-    flex: 1;
-    min-height: -webkit-fill-available;
+    width: 100vw;
+    height: 100vh;
     background-color: #151515;
     padding: 10px;
     flex: 1;
     border: 2px solid #fff;
-    position: relative;
 }
 
 .btn {
