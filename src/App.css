@@ -6,7 +6,7 @@
 }
 
 .mainscreen {
-    width: 100vw;
+    flex: 1;
     min-height: -webkit-fill-available;
     background-color: #151515;
     padding: 10px;

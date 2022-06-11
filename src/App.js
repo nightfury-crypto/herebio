@@ -10,9 +10,9 @@ function App() {
   const getheight = window.innerHeight
 
   return (
-    <div className="app">
+    <div className="app" style={{height: getheight}}>
       <SideBar />
-      <div className='mainscreen' style={{height: getheight}}>
+      <div className='mainscreen' >
         <Routes >
           <Route path="/complementary" element={<Complementary />}>
           </Route>
