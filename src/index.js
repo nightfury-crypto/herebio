@@ -4,8 +4,7 @@ import './index.css';
 import App from './App';
 import { HashRouter } from 'react-router-dom'
 
-
-document.querySelector('body').style.height = window.innerHeight;
+document.querySelector('body').style.minHeight = window.innerHeight;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <HashRouter >

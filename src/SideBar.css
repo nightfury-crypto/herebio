@@ -50,7 +50,6 @@
     transition: all 0.6s ease-in-out;
 }
 .sideclose {
-    /* display: none !important; */
     left: -100%;
 }
 .barhead {
