@@ -1,7 +1,7 @@
 import React from 'react';
 import './Boxes.css'
 
-function Boxes({ display, bgColor, noBor, height, width, showwholescore, hidewholescore, diagonal, ms, gap, val, maxScore, upper, side }) {
+function Boxes({ display, bgColor, noBor, height, width, showwholescore, hidewholescore, diagonal, ms, gap, val, maxScore, upper, side, showZero }) {
 
   return (
     <>
@@ -23,8 +23,11 @@ function Boxes({ display, bgColor, noBor, height, width, showwholescore, hidewho
             <div className="bs">
               <h6>Side cell score</h6>
               <span>{side}{gap} = {side + gap}</span>
+              {showZero && (<>
+              <span className='showZero'></span>
+              <span>0</span>
+              </>) }
             </div>
-
             <div className="bs">
               <h6>max score</h6>
               <span>{maxScore}</span>

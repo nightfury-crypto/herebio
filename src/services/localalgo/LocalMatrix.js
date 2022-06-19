@@ -119,7 +119,7 @@ function LocalMatrix({ seq1, seq2, setBoolMatrix, gapPenalty, mismatch, matchSco
                         box.push(<Boxes key={`${i},${j}`} direction={direction}
                             height={hig} width={wig} display={boxScore} val={`${i},${j}`} diagonal={digonalBox.props.display} ms={temp[i - 2][j - 2]}
                             gap={gapPenalty} maxScore={boxScore} upper={upperBox.props.display} side={sideBox.props.display}
-                            showwholescore={showwholescore} hidewholescore={hidewholescore} />)
+                            showwholescore={showwholescore} hidewholescore={hidewholescore} showZero={true}/>)
                     }
                 }
             }
@@ -252,15 +252,15 @@ function LocalMatrix({ seq1, seq2, setBoolMatrix, gapPenalty, mismatch, matchSco
     }
 
 
-    let alignment = String.raw`
-        Seq1 - ${align1.split("").reverse().join("")}   
-               ${alignpipe.split("").reverse().join("")}
-        Seq2 - ${align2.split("").reverse().join("")}   
+let alignment = String.raw`
+    Seq1 - ${align1.split("").reverse().join("")}   
+           ${alignpipe.split("").reverse().join("")}
+    Seq2 - ${align2.split("").reverse().join("")}   
 
-        ----------------------------
-                Score => ${score}
-        ----------------------------
-    `;
+    ------------------------
+           Score => ${score}
+    ------------------------
+`;
 
     return (
         <div className='matrix'>

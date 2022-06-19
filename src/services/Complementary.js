@@ -77,7 +77,7 @@ function Complementary() {
                     ></textarea>
                     <label style={{ marginBottom: '20px' }}>--------- Options ---------</label>
                     <span className='seqoption'>
-                        <label>Type of sequence - </label>
+                        <label className='sc'>Type of sequence - </label>
                         <label htmlFor="comp__dna">
                             <input type="radio" name="type" id="comp__dna" value="DNA" checked={type == 'DNA'} onChange={typehandle} />
                             <span>DNA</span>
@@ -88,7 +88,7 @@ function Complementary() {
                         </label>
                     </span>
                     <span className='seqoption' style={{ marginTop: '6px' }}>
-                        <label>What output - </label>
+                        <label className='sc'>What output - </label>
                         <label htmlFor="reverse__type">
                             <input type="radio" name="outtype" id="reverse__type" value="reverse" checked={outtype == 'reverse'} onChange={outtypehandle} />
                             <span>Reverse</span>

@@ -28,7 +28,7 @@ function ContentGC() {
             }
         }
         let gc = G + C
-        let at = A + T 
+        let at = A + T
         setgcCal((gc / seqInput.length) * 100)
         setatCal((at / seqInput.length) * 100)
     }
@@ -57,11 +57,11 @@ function ContentGC() {
                 <div>
                     <div className='same gcsame'>
                         <p>OUTPUT </p>
-                        <span>GC content - <span> {String(gcCal).substring(0,5)}%</span></span>
-                        <span>AT content - <span> {String(atCal).substring(0,5)}%</span></span>
+                        <span>GC content - <span> {String(gcCal).substring(0, 5)}%</span></span>
+                        <span>AT content - <span> {String(atCal).substring(0, 5)}%</span></span>
                     </div>
                 </div>
-            </div> : <div className="comp__bottomResult"><hr /></div>}
+            </div> : <></>}
         </div>
     )
 }

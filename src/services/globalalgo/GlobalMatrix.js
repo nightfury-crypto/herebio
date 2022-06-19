@@ -16,7 +16,6 @@ function GlobalMatrix({ seq1, seq2, setBoolMatrix, gapPenalty, mismatch, matchSc
             e.target.children[0].style.display = 'block';
         }
     }
-
     const hidewholescore = (e) => {
         if (e.target.children[0]) {
             e.target.children[0].style.display = 'none';
@@ -65,12 +64,12 @@ function GlobalMatrix({ seq1, seq2, setBoolMatrix, gapPenalty, mismatch, matchSc
                     else if (i > 1 && j == 1) {
                         let initialize = (i - 1) * gapPenalty
                         box.push(<Boxes key={`${i},${j}`}
-                            height={hig} width={wig} display={initialize} bgColor={'rgb(127, 104, 151)'} direction={"⬅"} val={`${i},${j}`}/>)
+                            height={hig} width={wig} display={initialize} bgColor={'rgb(127, 104, 151)'} direction={"⬅"} val={`${i},${j}`} />)
 
                     } else if (i == 1 && j > 1) {
                         let initialize = (j - 1) * gapPenalty
                         box.push(<Boxes key={`${i},${j}`}
-                            height={hig} width={wig} display={initialize} bgColor={'rgb(127, 104, 151)'} direction={"⬆"} val={`${i},${j}`}/>)
+                            height={hig} width={wig} display={initialize} bgColor={'rgb(127, 104, 151)'} direction={"⬆"} val={`${i},${j}`} />)
                     }
                     else {
                         let digonalBox;
@@ -162,11 +161,11 @@ function GlobalMatrix({ seq1, seq2, setBoolMatrix, gapPenalty, mismatch, matchSc
         let a2 = ''
         let t1 = seq1.length + 2
         let t2 = seq2.length + 2
-        
+
         while (t1 > 0 || t2 > 0) {
             let check = "";
             for (let i = 0; i < box.length; i++) {
-                if (box[i].key == `${t1-1},${t2-1}`) {
+                if (box[i].key == `${t1 - 1},${t2 - 1}`) {
                     if (box[i].key == "1,1") {
                         allboxes[i].style.backgroundColor = "crimson"
                         t1 = 0
@@ -212,29 +211,29 @@ function GlobalMatrix({ seq1, seq2, setBoolMatrix, gapPenalty, mismatch, matchSc
         setAlign2(a2)
     }
 
-    let alignment = String.raw`
-        Seq1 - ${align1.split("").reverse().join("")}   
-               ${alignpipe.split("").reverse().join("")}
-        Seq2 - ${align2.split("").reverse().join("")}   
+let alignment = String.raw`
+Seq1 - ${align1.split("").reverse().join("")}   
+       ${alignpipe.split("").reverse().join("")}
+Seq2 - ${align2.split("").reverse().join("")}   
 
-        ----------------------------
-                Score => ${score}
-        ----------------------------
-    `;
+----------------------
+    Score => ${score}
+----------------------
+`;
 
     return (
         <div className='matrix'>
             <span className="arrow-back" onClick={() => setBoolMatrix(false)}><span></span></span>
-            <h3>Global Alignment Matrix</h3>
-            <div className="matrixbg" style={{ maxHeight: hi, maxWidth: wi }} ref={renderRef}>
-                {box}
-            </div>
-            <button className='btn' onClick={showtrace}>Show Traceback & alignment</button>
-            {(align1 && align2) && <div className="display__result">
-                <pre>
-                    {alignment}
-                </pre>
-            </div>}
+            <h3 className='needleheading'>Global Alignment Matrix</h3>
+                <div className="matrixbg" style={{ maxHeight: hi, maxWidth: wi }} ref={renderRef}>
+                    {box}
+                </div>
+                <button className='btn' onClick={showtrace}>Show Traceback & alignment</button>
+                {(align1 && align2) && <div className="display__result scoredis">
+                    <pre>
+                        {alignment}
+                    </pre>
+                </div>}
         </div>
     )
 }

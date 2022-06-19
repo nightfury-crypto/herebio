@@ -50,7 +50,8 @@
 
 @media screen and (max-width:565px) {
     .contentgc__top > h3 {
-        font-size: 1.5em !important;
+        font-size: 0.9rem !important;
+        font-weight: 100;
     }
 
     .gcsame {

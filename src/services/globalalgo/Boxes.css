@@ -11,7 +11,14 @@
     z-index: 1;
 }
 
-
+.showZero{
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 18%;
+}
 
 .hover-show {
     position: absolute;

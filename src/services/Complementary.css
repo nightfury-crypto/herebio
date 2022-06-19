@@ -22,7 +22,7 @@
 }
 
 .comp__top>h3 {
-    font-size: 2em;
+    font-size: 1.8rem;
     font-family: 'Titan One', cursive;
     color: #fff;
     font-weight: 50;
@@ -146,7 +146,7 @@
         align-items: flex-start;
     }
 
-    .seqoption>label:first-child {
+    .seqoption> .sc {
         /* text-decoration: underline; */
         color: coral;
     }

@@ -18,37 +18,35 @@ function NeedlemanAlgo() {
 
     if (boolMatrix) {
         return <GlobalMatrix 
-        seq1={seqInput1.toUpperCase().substring(0, 21)} seq2={seqInput2.toUpperCase().substring(0, 21)} 
+        seq1={seqInput1.toUpperCase().substring(0, 29)} seq2={seqInput2.toUpperCase().substring(0, 16)} 
         setBoolMatrix={setBoolMatrix} 
         matchScore={parseInt(matchNum)} mismatch={parseInt(mismatchNum)} gapPenalty={parseInt(gapNum)} />
     } else {
         return (
             <div className="contentgc">
                 <div className="contentgc__top">
-                    <h3 style={{ textTransform: 'uppercase' }}>Needleman-Wunsch algorithm</h3>
+                    <h3 className="needleheading" style={{ textTransform: 'capitalize' }}>Needleman-Wunsch algorithm</h3>
                 </div>
 
                 <div className="contentgc__bottom">
                     <form className='global__form'>
                         <label htmlFor="seqinput1">Enter Sequence 1 - </label>
-                        <textarea name="seq1" id='seqinput1' className='txtArea'
-                            cols="60" rows="5"
+                        <textarea name="seq1" id='seqinput1' className='txtArea needle-seq1'
                             placeholder='Enter sequence1 - 
-                            (max seq length 21)'
+                            (max seq length 15)'
                             value={seqInput1.toUpperCase()}
                             onChange={(e) => setSequenceInput1(e.target.value)}
                         ></textarea>
 
                         <label htmlFor="seqinput2">Enter Sequence 2 - </label>
-                        <textarea name="seq2" id='seqinput2' className='txtArea'
-                            cols="60" rows="5"
+                        <textarea name="seq2" id='seqinput2' className='txtArea needle-seq2'
                             placeholder='Enter sequence2 -
-                            (max seq length 21)'
+                            (max seq length 15)'
                             value={seqInput2.toUpperCase()}
                             onChange={(e) => setSequenceInput2(e.target.value)}
                         ></textarea>
                         <label style={{ marginBottom: '20px' }}>--------- Options ---------</label>
-                        <span className='seqoption'>
+                        <span className='seqoption needle-options'>
 
                             <label htmlFor="match_score" className='pack'>
                                 <span style={{ marginRight: '10px' }}>Match Score</span>
@@ -73,7 +71,7 @@ function NeedlemanAlgo() {
                         </span>
 
                         <span className='default'>
-                            <label>By default - <pre>match = 5 || mismatch = -1 || gap = -3</pre> </label>
+                            <label>By default - <span>match = 5 || mismatch = -1 || gap = -3</span> </label>
                         </span>
 
                         <input type="button" className='comp__btn' value="hit hard" onClick={matrixhandle} />

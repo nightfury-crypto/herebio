@@ -25,7 +25,7 @@ function SmithWaterAlgo() {
         return (
             <div className="contentgc">
                 <div className="contentgc__top">
-                    <h3 style={{ textTransform: 'uppercase' }}>Smith-Waterman algorithm</h3>
+                    <h3 className="needleheading" style={{ textTransform: 'uppercase' }}>Smith-Waterman algorithm</h3>
                 </div>
 
                 <div className="contentgc__bottom">
