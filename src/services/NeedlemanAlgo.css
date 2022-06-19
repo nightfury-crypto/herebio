@@ -56,7 +56,10 @@
     .global__form {
         margin-left: 0px !important;
     }
-
+    
+    .default {
+        margin-top: 10px;
+    }
     .needle-options {
         flex-direction: column;
         justify-content: flex-start;
@@ -80,6 +83,6 @@
     .needle-seq1,
     .needle-seq2 {
         width: 100%;
-        height: 100px;
+        height: 80px;
     }
 }
