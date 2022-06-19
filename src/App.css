@@ -10,8 +10,6 @@
     height: 100vh;
     background-color: #151515;
     padding: 10px;
-    overflow-y: auto;
-    /* border: 2px solid #fff; */
 }
 
 .btn {
