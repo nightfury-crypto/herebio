@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Boxes from '../globalalgo/Boxes';
-import '../globalalgo/GlobalMatrix.css';
+import Boxes from '../../needleman/globalalgo/Boxes';
+import '../../needleman/globalalgo/GlobalMatrix.css';
 
 function LocalMatrix({ seq1, seq2, setBoolMatrix, gapPenalty, mismatch, matchScore }) {
     const [hi, setHeight] = useState('')

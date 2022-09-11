@@ -60,6 +60,11 @@ function SideBar() {
                             Local Alignment
                         </div>
                     </Link>
+                    <Link to="/sanger" onClick={closesidebar}>
+                        <div className="bar">
+                            Sanger Sequencing
+                        </div>
+                    </Link>
 
                 </div>
             </div>

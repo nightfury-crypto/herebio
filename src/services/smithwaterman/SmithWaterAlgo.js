@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import LocalMatrix from './localalgo/LocalMatrix';
-import './NeedlemanAlgo.css';
+import '..//needleman/NeedlemanAlgo.css';
 
 function SmithWaterAlgo() {
     const [seqInput1, setSequenceInput1] = useState('')
