@@ -7,6 +7,16 @@ import ContentGC from './services/ContentGC';
 import SmithWaterAlgo from './services/SmithWaterAlgo';
 
 function App() {
+
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+  // on resize
+  window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
+  
   return (
     <div className="app">
       <SideBar />

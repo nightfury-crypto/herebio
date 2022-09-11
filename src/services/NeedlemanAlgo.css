@@ -4,6 +4,7 @@
     align-items: flex-start;
     flex-direction: column;
     margin-left: 30px;
+    overflow-y: auto;
 }
 
 .global__form>label {

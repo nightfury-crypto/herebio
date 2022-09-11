@@ -7,7 +7,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .complementary>div {
@@ -134,7 +134,20 @@
     user-select: none;
 }
 
-@media screen and (max-width:565px) {
+
+
+@media screen and (max-width:565px) { 
+    .comp__top>h3 {
+        font-size: 1.4em;
+    }
+    .seqoption {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width:365px) {
 
     .complementary__form {
         margin-left: 0px !important;
@@ -152,7 +165,7 @@
     }
 
     .comp__top>h3 {
-        font-size: 1.4em;
+        font-size: 1em;
     }
 
     .complementary__form>label:first-child {
