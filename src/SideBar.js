@@ -31,9 +31,11 @@ function SideBar() {
             <div className={`sidebar__wrap ${hamisOpen ? '' : 'sideclose'}`} onClick={closesidebar}>
 
                 <div className={`sidebar ${hamisOpen ? '' : 'sideclose'}`}>
-                    <div className="bar barhead">
-                        Here Bio
-                    </div>
+                    <Link to="/">
+                        <div className="bar barhead">
+                            Here Bio
+                        </div>
+                    </Link>
 
                     <Link to="/complementary" onClick={closesidebar}>
                         <div className="bar" style={{ marginTop: '30px' }}>
