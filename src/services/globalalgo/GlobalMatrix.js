@@ -225,9 +225,11 @@ Seq2 - ${align2.split("").reverse().join("")}
         <div className='matrix'>
             <span className="arrow-back" onClick={() => setBoolMatrix(false)}><span></span></span>
             <h3 className='needleheading'>Global Alignment Matrix</h3>
+            <div className="matrix-wrap">
                 <div className="matrixbg" style={{ maxHeight: hi, maxWidth: wi }} ref={renderRef}>
                     {box}
                 </div>
+            </div>
                 <button className='btn' onClick={showtrace}>Show Traceback & alignment</button>
                 {(align1 && align2) && <div className="display__result scoredis">
                     <pre>
