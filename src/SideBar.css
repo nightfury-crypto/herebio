@@ -60,6 +60,7 @@
 }
 .sidebar > a {
     text-decoration: none;
+    width: 96%;
 }
 .bar {
     width: 100%;
