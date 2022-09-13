@@ -26,8 +26,8 @@ function App() {
         <Routes >
           <Route path="/complementary" element={<Complementary />}>
           </Route>
-          <Route path="/sanger" element={<SangerSeq />}>
-          </Route>
+          {/* <Route path="/sanger" element={<SangerSeq />}>
+          </Route> */}
           <Route path="/contentgc" element={<ContentGC />}>
           </Route>
           <Route path="/global" element={<NeedlemanAlgo />}>
