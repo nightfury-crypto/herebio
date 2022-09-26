@@ -11,7 +11,6 @@ const LandingPage = () => {
                 <Link to="/about">
                     <h5>ABOUT</h5>
                 </Link>
-                <img src="/private/homepage.png" alt="" />
             </div>
         </div>
     )
