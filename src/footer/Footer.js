@@ -8,13 +8,12 @@ const Footer = () => {
             <div className="footer-wrap">
                 <h5>Biological Tools &copy; KARNAIL SINGH CHOUDHARY</h5>
                 <span> 
-                <Link to="/privacy">
-                    <span>Privacy Policy</span>
-                </Link>
-                <span>|</span>
-                <p>pradhankarnail@gmail.com</p>
-                </span>
-                
+                    <Link to="/privacy">
+                        <span >Privacy Policy</span>
+                    </Link>
+                    <span style={{margin: '0 2px'}}>|</span>
+                    <p>pradhankarnail@gmail.com</p>
+                </span> 
             </div>
         </div>
     )
