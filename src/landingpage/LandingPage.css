@@ -1,0 +1,82 @@
+.mainpage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.mainstart {
+    height: 90%;
+    width: fit-content;
+    min-height: 100% !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mainstart>h1 {
+    font-size: 5em;
+}
+
+.mainstart >.chipshow {
+    width: fit-content;
+    margin: 50px 0;
+    padding: 8px 30px;
+    border-radius: 8px;
+    background-color: rgb(230, 48, 84);
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    justify-content: flex-end;
+}
+
+.mainstart >.chipshow:hover {
+    background-color: rgb(250, 69, 105);
+}
+
+
+.mainpage > .service {
+    font-size: 1.6em;
+    width: fit-content;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    padding: 10px;
+}
+
+.mainpage > .service > h3 {
+    width: fit-content;
+    position: relative;
+}
+
+.mainpage > .service > h3 > span {
+    width: 70%;
+    height: 2px;
+    background-color: crimson;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.mainpage > .service > .allchips {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+
+}
+
+.mainpage > .service > .allchips > a > .onechip {
+    padding: 8px 30px;
+    border-radius: 8px;
+    background-color: rgb(242, 73, 107);
+    font-size: 0.8em;
+    cursor: pointer;
+}

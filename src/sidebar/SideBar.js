@@ -23,9 +23,9 @@ function SideBar() {
         <>
             <div className={`hamburger ${hamisOpen ? 'hamactive' : ''}`} onClick={handlehamburger}>
                 <div className="ham-wrap">
-                    <div className={`line1 ${hamisOpen ? 'lineactive' : ''}`}></div>
-                    <div className={`line2 ${hamisOpen ? 'lineactive' : ''}`}></div>
-                    <div className={`line3 ${hamisOpen ? 'lineactive' : ''}`}></div>
+                    <div className={`line1 ${hamisOpen ? 'lineactive' : ''}`} onClick={handlehamburger}></div>
+                    <div className={`line2 ${hamisOpen ? 'lineactive' : ''}`} onClick={handlehamburger}></div>
+                    <div className={`line3 ${hamisOpen ? 'lineactive' : ''}`} onClick={handlehamburger}></div>
                 </div>
             </div>
             <div className={`sidebar__wrap ${hamisOpen ? '' : 'sideclose'}`} onClick={closesidebar}>
