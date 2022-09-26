@@ -1,13 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './LandingPage.css';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+
 
 const LandingPage = () => {
     const services = [
         { title: 'COMPLEMENTARY', link: 'complementary' },
         { title: 'GC CONTENT', link: 'contentgc' },
         { title: 'GLOBAL ALIGNMENT', link: 'global' },
-        { title: 'LOCAL ALIGNMENT', link:  'local'},
+        { title: 'LOCAL ALIGNMENT', link: 'local' },
     ]
     return (
         <div className='mainpage'>
@@ -19,14 +23,19 @@ const LandingPage = () => {
             <div className="service">
                 <h3>SERVICES <span></span></h3>
                 <div className="allchips">
-                    {services.map((service, i) => (
-                        <Link to={`/${service.link}`} key={i}>
-                            <div className="onechip" key={i}>
-                                <h5>{service.title}</h5>
-                            </div>
-                        </Link>
-
-                    ))}
+                    <Box sx={{ flexGrow: 1 }}>
+                        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                            {services.map((service, index) => (
+                                <Grid item xs={6} sm={4} md={4} key={index}>
+                                    <Link to={`/${service.link}`} key={index}>
+                                        <div className="onechip" key={index}>
+                                            <h5>{service.title}</h5>
+                                        </div>
+                                    </Link>
+                                </Grid>
+                            ))}
+                        </Grid>
+                    </Box>
                 </div>
             </div>
 

@@ -70,13 +70,26 @@
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px;
-
+    position: relative;
 }
 
-.mainpage > .service > .allchips > a > .onechip {
+.mainpage > .service  .allchips a > .onechip {
     padding: 8px 30px;
     border-radius: 8px;
     background-color: rgb(242, 73, 107);
-    font-size: 0.8em;
+    font-size: 0.7em;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px) {
+    .mainstart, .service {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .mainstart, .service {
+        font-size: 10px;
+    }
 }
