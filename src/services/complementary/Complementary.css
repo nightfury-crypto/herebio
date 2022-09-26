@@ -184,3 +184,10 @@
         margin-left: 0px !important;
     }
 }
+
+
+@media screen and (max-height: 400px) {
+    .complementary {
+        padding-bottom: 60px;
+    }
+}

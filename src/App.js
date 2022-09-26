@@ -6,6 +6,9 @@ import SmithWaterAlgo from './services/smithwaterman/SmithWaterAlgo';
 import NeedlemanAlgo from './services/needleman/NeedlemanAlgo';
 import ContentGC from './services/gccontent/ContentGC';
 import SangerSeq from './services/sanger-seq/SangerSeq';
+import PrivacyPolicy from './privacypolicy/PrivacyPolicy';
+import LandingPage from './landingpage/LandingPage';
+import Footer from './footer/Footer';
 
 
 function App() {
@@ -24,6 +27,10 @@ function App() {
       <SideBar />
       <div className='mainscreen'>
         <Routes >
+          {/* privacy policy */}
+          <Route path="/privacy" element={<PrivacyPolicy />}>
+          </Route>
+          {/* complementary */}
           <Route path="/complementary" element={<Complementary />}>
           </Route>
           {/* <Route path="/sanger" element={<SangerSeq />}>
@@ -34,17 +41,11 @@ function App() {
           </Route>
           <Route path="/local" element={<SmithWaterAlgo />}>
           </Route>
-          <Route path="/"
-            element={<div className='mainpage'>
-              <div className="mainstart">
-                <h1>HERE BIO</h1>
-                <h4>It's a website where you can find some tools related to biology</h4>
-                <h5>Select the service from the sidebar.</h5>
-              </div>
-            </div>}>
+          <Route path="/" element={<LandingPage />}>
           </Route>
         </Routes >
       </div>
+      <Footer />
     </div>
   );
 }

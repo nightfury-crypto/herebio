@@ -1,0 +1,40 @@
+.footer {
+    background-color: rgb(37, 37, 37);
+    height: fit-content;
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    position: sticky;
+    bottom: 0;
+    text-align: center !important;
+}
+
+.footer-wrap > p {
+    font-family: cursive;
+    font-size: 0.8em;
+}
+
+.footer-wrap a {
+    text-decoration: none;
+    color: rgb(255, 147, 169);
+    font-size: 0.8em;
+}
+
+.footer-wrap > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-wrap > span > p {
+    margin-left: 4px;
+}
+
+@media screen  and (max-width:350px) {
+    .footer {
+        font-size: 11px;
+    }    
+}
