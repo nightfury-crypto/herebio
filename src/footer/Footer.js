@@ -12,7 +12,9 @@ const Footer = () => {
                         <span >Privacy Policy</span>
                     </Link>
                     <span style={{margin: '0 2px'}}>|</span>
-                    <p>pradhankarnail@gmail.com</p>
+                    <Link to="/terms">
+                        <span >Terms and Conditions</span>
+                    </Link>
                 </span> 
             </div>
         </div>

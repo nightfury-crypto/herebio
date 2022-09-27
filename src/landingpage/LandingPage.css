@@ -8,7 +8,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 }
 
 .mainstart {
@@ -26,12 +26,19 @@
     font-size: 5em;
 }
 
-.mainstart >.chipshow {
+.mainstart > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.mainstart .chipshow {
     width: fit-content;
-    margin: 50px 0;
     padding: 8px 30px;
     border-radius: 8px;
-    background-color: rgb(230, 48, 84);
+    background-color: rgb(194, 30, 63);
     user-select: none;
     cursor: pointer;
     transition: all 0.5s ease-in-out;

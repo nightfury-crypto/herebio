@@ -2,11 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './LandingPage.css';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import AdSense from 'react-adsense';
 
 
 const LandingPage = () => {
+
+    <AdSense.Google
+        client='ca-pub-3893208219221443'
+        slot='9657250273'
+    />
     const services = [
         { title: 'COMPLEMENTARY', link: 'complementary' },
         { title: 'GC CONTENT', link: 'contentgc' },
@@ -18,7 +23,12 @@ const LandingPage = () => {
             <div className="mainstart">
                 <h1>HERE BIO</h1>
                 <h4>It's a website where you can find some tools related to biology</h4>
-                <h5 className="chipshow">Select the service from the sidebar</h5>
+                <span>
+                    <h5 className="chipshow">Select the service from the sidebar</h5>
+                    <Link to="/contact">
+                        <p>Contact Us</p>
+                    </Link>
+                </span>
             </div>
             <div className="service">
                 <h3>SERVICES <span></span></h3>

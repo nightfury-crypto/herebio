@@ -9,6 +9,8 @@ import SangerSeq from './services/sanger-seq/SangerSeq';
 import PrivacyPolicy from './privacypolicy/PrivacyPolicy';
 import LandingPage from './landingpage/LandingPage';
 import Footer from './footer/Footer';
+import TermsNconditions from './terms/TermsNconditions';
+import ContactMe from './contact/ContactMe';
 
 
 function App() {
@@ -26,8 +28,14 @@ function App() {
       <SideBar />
       <div className='mainscreen'>
         <Routes >
+          {/* contact */}
+          <Route path="/contact" element={<ContactMe />}>
+          </Route>
           {/* privacy policy */}
           <Route path="/privacy" element={<PrivacyPolicy />}>
+          </Route>
+          {/* terms and conditions */}
+          <Route path="/terms" element={<TermsNconditions />}>
           </Route>
           {/* complementary */}
           <Route path="/complementary" element={<Complementary />}>
