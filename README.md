@@ -1,6 +1,6 @@
 # WELCOME TO HERE BIO WEB APPLICATION
 
-![what is this](/public/private/homepage.png)
+![what is this](https://herebio.works/private/homepage.png)
 
 **DEMO of this web app -** [LIVE LINK](herebio.works)
 
